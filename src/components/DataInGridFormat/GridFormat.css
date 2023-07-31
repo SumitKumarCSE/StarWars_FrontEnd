@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+.GridFormat {
+    box-sizing: border-box;
+    height: 49.0rem;
+    padding: 1rem 0 2rem 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    display: grid;
+    justify-content: center;
+    gap: 4rem;
+    margin-left:-2rem;
+    grid-template-columns: repeat(auto-fit, minmax(35.6rem, 1rem));
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+    background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: .5rem;
+}
+.grandparent{
+    width:34.6rem;
+    height:22rem;
+    gap:2rem;
+}
+.parent{
+    overflow: hidden;
+    width: 35.433334rem;
+    height: 16rem;
+    border-radius: .8rem;
+    margin-bottom: .4rem;
+}
+
+.cardphoto {
+    width: 35.433334rem;
+    height: 16rem;
+    border-radius: .8rem;
+    margin-bottom: .4rem;
+    background: var(--white);
+    transition: all 3s ease;
+}
+.cardphoto:hover {
+    transform: scale(1.4);
+}
+
+.carddetail {
+    display: flex;
+    width: 35.433334rem;
+    height: 5.6rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+    background: #344064;
+    border-radius: .8rem;
+    gap: 1.2rem;
+    align-items: center;
+}
+.carddetail:hover{
+    background: var(--hbg);
+}
+
+.carddetail svg {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.header {
+    font-family: 'Inter', sans-serif;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    margin-top: .8rem;
+    color: var(--white);
+}
+
+.griddropdownmenu {
+    margin-left: auto;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+.dropbtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn svg {
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: .4rem;
+    border-radius: .6rem;
+    background: #5c6583;
+    margin-left: -1rem;
+    margin-top: -.5rem;
+}
+
+
+/* styling of dropdown contents */
+.dropdowncontent {
+    position: relative;
+    width: 17.2rem;
+    height: 23.8rem;
+    background: var(--white);
+    border-radius: .8rem;
+    padding: .8rem;
+    left:-14rem;
+    margin-top: -3.8rem;
+    margin-left: -3rem;
+    display: none;
+    z-index:1;
+}
+
+.griddropdownmenu:hover .dropdowncontent {
+    display: block;
+}
+
+.dropdownitem {
+    background: transparent;
+    box-sizing: border-box;
+    height: 2.8rem;
+    width: 15.6rem;
+    padding: .4rem .8rem;
+    margin-bottom: .4rem;
+    border-radius: .4rem;
+    border: .1rem;
+    gap: .8rem;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdownitem:hover {
+    background: #f1f1f5;
+}
+
+button p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+
+.delete {
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width:1490px) {
+    .GridFormat {
+        gap:2rem;
+    }
+}
+@media (max-width:1435px) {
+    .GridFormat{
+        grid-template-columns: repeat(auto-fit, minmax(34.6rem, 1rem));
+    }
+}
+
+@media (min-width:1360px) and (max-width:1400px) {
+    .GridFormat {
+        height: 49rem;
+        width: 114.3rem;
+        gap: 2rem;
+        justify-content: left;
+        grid-template-columns: repeat(auto-fit, minmax(35.433334rem, 2rem));
+    }
+}
+
+@media (min-width:969px) and (max-width:1360px) {
+    .GridFormat {
+        gap:4rem;
+        grid-template-columns: repeat(auto-fit, minmax(34.6rem, 0.9rem));
+    }
+}
+
+@media (max-width: 1359px) {
+    .GridFormat {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1025px) {
+    .GridFormat{
+        height:100vw;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    .sidecontent {
+        width: 0;
+    }
+}

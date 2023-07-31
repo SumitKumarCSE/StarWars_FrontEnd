@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #03123B;
+  --grey: #696974;
+  --white: #fff;
+  --hbg: #cb1a80;
+  --hov: #f1f1f5;
+}
+
+/* Use vw and vh for make it responsive for every screen size */
+.App {
+  height: 100vh;
+  width: 100vw;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+/* Dimensions and properties for NavBar */
+.AppHeading {
+  display: block;
+  height: 7.6rem;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+/* Properties of other contents */
+.Appcontent {
+  display: block;
+}

@@ -1,0 +1,128 @@
+.combine{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width:17vw;
+}
+.SideBar{
+    overflow-y: scroll;
+    box-sizing: border-box;
+    width: 17vw;
+    height: 57.6rem;
+    padding: 1rem 1.4rem 1rem 1rem;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+.menu{
+    box-sizing: border-box;
+    height: 4.6rem;
+    padding: 1.2rem 2rem;
+    margin-left: auto;
+    border-radius: .6rem;
+    background: transparent;
+    margin-bottom: 1rem;
+}
+.dropdown{
+    display: flex;
+    height: 2rem;
+    align-items: center;
+}
+.dropdown svg{
+    height: 2.2rem;
+    width: 2.2rem;
+}
+.dropdown p{
+    position: relative;
+    margin-top: 1rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    margin-left: .8rem;
+}
+.dropdown img{
+    height: 1.8rem;
+    margin-left: auto;
+}
+
+/* innerdropdown styling */
+.innerdropdown{
+    display: flex;
+    height: fit-content;
+    padding: .8rem 1.2rem .8rem 2.8rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.innerdropdown svg{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.innerdropdown p{
+    height: 2rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    margin-left: .8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.innerdropdown img{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: auto;
+}
+
+.innerdropdown:hover{
+    background: #4d5875;
+    border: .1rem solid black;
+}
+
+
+/* Media queries according to different screen sizes */
+@media (min-width:1360px) and (max-width: 1400px) {
+    .sidecontent{
+        width:22.3rem;
+    }
+    .Sidebar{
+        width: 22.3rem;
+        height: 10rem;
+    }
+    .menu{
+        height: 3.6rem;
+        padding: .8rem 1.2rem;
+    }
+    .dropdown p{
+        font-size: 1.4rem;
+    }
+    .dropdown svg{
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+}
+@media(max-width: 1330px) {
+    .innerdropdown svg{
+        display: none;
+    }
+    .innerdropdown {
+        height: 8vh;
+    }
+    .dropdown svg{
+        display: none;
+    }
+}
+
+/* become invisible when encounter with device of this screen size */
+@media (max-width: 1000px) {
+    .SideBar{
+        display: none;
+    }
+}

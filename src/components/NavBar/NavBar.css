@@ -1,0 +1,46 @@
+.NavBar {
+    background: var(--bg);
+    display: flex;
+    height: 36px;
+    justify-content: space-between;
+}
+
+.NavBar img {
+    height: 36px;
+    float:left;
+}
+
+.Search{
+    display: flex;
+    height: 32px;
+    width: 216px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    gap: 4px;
+}
+
+.Search input{
+    background: transparent;
+    border:0px;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    height: 20px;
+    width: 100px;
+    align-items: center;
+}
+
+.Search input::placeholder{
+    color:#FFFFFF;
+}
+
+.ssvg{
+    width: 20px;
+    height: 20px;
+}

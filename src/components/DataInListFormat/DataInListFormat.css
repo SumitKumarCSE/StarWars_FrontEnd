@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+.ListFormat{
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    width: 80vw;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    height: 50rem;
+    margin-left:-2rem;
+    position: relative;
+}
+table{
+    box-sizing: border-box;
+    display: block;
+    height: 49rem;
+    width: 78vw;
+}
+thead{
+    box-sizing: border-box;
+    height: 4rem;
+    display: block;
+    position: fixed;
+    text-align: left;
+    position: relative;
+}
+th{
+    background: #4D5875;
+    height: 4rem;
+}
+tbody{
+    display: block;
+    height: 37.8rem;
+    position: relative;
+    overflow-y: scroll !important;
+}
+.listcarddetail{
+    background: transparent;
+    border-bottom: .1rem solid var(--white);
+    width: 78vw;
+    height: 5.4rem;
+    display: flex;
+    border-radius: 0;
+    color: var(--white);
+    align-items: center;
+    position: relative;
+}
+.listcarddetail .first {
+    gap:.8rem;
+}
+.listcarddetail:hover {
+    background: var(--hbg);
+}
+td{
+    height: 4.0rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.first svg{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.first{
+    width: 25vw;
+    padding: 0 1.6rem;
+}
+.second{
+    width: 25vw;
+    padding: 0 1.6rem;
+}
+.third{
+    width: 24.3rem;
+    padding: 0 1.6rem;
+}
+.fourth{
+    width: 24.3rem;
+    padding: 0 1.6rem;
+}
+.drpbtn{
+    background: transparent;
+    border: none;
+    margin-left: 20rem;
+}
+.drpbtn svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+.listdropdowncontent {
+    position: absolute;
+    width: 17.2rem;
+    height: 23.8rem;
+    background: var(--white);
+    border-radius: .8rem;
+    top:1rem;
+    right:3rem;
+    padding: .8rem .8rem .6rem .8rem;
+    z-index: 1;
+    display: none;
+    overflow-y: scroll;
+}
+.drpbtn:hover + .listdropdowncontent,.listdropdowncontent:hover {
+    display: block;
+}
+.listdropdownitem {
+    background: transparent;
+    box-sizing: border-box;
+    height: 2.8rem;
+    width: 15.6rem;
+    padding: .4rem .8rem;
+    margin-bottom: .4rem;
+    border-radius: .4rem;
+    border: .1rem;
+    gap: .8rem;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.listdropdownitem:hover {
+    background: #f1f1f5;
+}
+button p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+.delete {
+    margin-bottom: 0;
+}
+.listviewdropdown{
+    position: fixed;
+    z-index:2;
+    color: var(--white);
+    right: 0rem;
+    top:0rem;
+    height: 100vh;
+    width: 40.0rem;
+    background: var(--bg);
+    display: block;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, 1);
+}
+.listviewdropdown header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .1rem solid var(--white);
+    padding: 1.6rem 2rem;
+    height: 6.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 0.01rem;
+    margin-left: auto;
+}
+header button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.listviewdropdown header svg{
+    cursor: pointer;
+}
+.listviewdropdown main{
+    padding: 1rem;
+    width: 40rem;
+    height: 85vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.listviewdropdown main img{
+    margin-top: -.8rem;
+    border-radius: 1rem;
+    width: 38rem;
+    height:21.4rem;
+    margin-bottom: .6rem;
+}
+.viewtitle{
+    background: var(--white);
+    height:min-content;
+    padding:1rem 1.6rem;
+    color: black;
+    border-radius: .8rem;
+    margin-top: -.8rem;    
+}
+.hgt{
+    overflow-y: scroll;
+}
+.closebtn{
+    position: relative;
+    border-radius: .8rem;
+    border: none;
+    background: var(--hbg);
+    color:white;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 1rem 1.6rem;
+    bottom: 0px;
+    height: 4.4rem;
+    width: 38rem;
+    margin: -1rem 1rem;
+}
+.deletepopup{
+    position: absolute;
+    z-index:999;
+    position: fixed;
+    top:35vh;
+    left:40vw;
+    background: var(--white);
+    border-radius: 1.2rem;
+    width: 40rem;
+    height: 25.8rem;
+    box-sizing: border-box;
+    padding: 2.4rem;
+    display: block;
+    color: #101828;
+    box-shadow: 0rem .8rem .8rem -.4rem rgba(16, 24, 40, 1), 0rem 2rem 2.4rem -.4rem rgba(7, 12, 20, 1);
+}
+.deleteupper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+}
+.alertsvg{
+    box-sizing: border-box;
+    padding:1.2rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-bottom: 2rem;
+}
+.alertsvg svg{
+    box-shadow: 0 0 2.5rem rgba(229, 10, 10,0.7), 0 0 4rem rgba(204, 46, 46, 0.3);
+}
+.deleteupper h1{
+    margin-bottom: .8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+.deleteupper p {
+    color: var(--grey);
+    font-weight: 400;
+}
+.deleteupper p span{
+    font-weight: 700;
+}
+.deletelower{
+    display: flex;
+    flex-direction: row;
+    gap:1.2rem;
+}
+.deletelower button{
+    width: 17rem;
+    height: 4.4rem;
+    padding: 1rem 1.8rem;
+    box-sizing: border-box;
+    border-radius: .8rem;
+    text-align: center;
+    justify-content: center;
+    border: .1rem solid #DEDEDE;
+}
+
+.yes{
+    color: var(--white);
+    border: .1rem solid #FC5A5A;
+    background: #FC5A5A;
+}
+
+@media (max-width:1400px){
+    .ListFormat{
+        box-sizing: border-box;
+        padding: 1rem 2rem;
+        width: 114.3rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        letter-spacing: 0.05rem;
+        height: 43.8rem;
+        margin-left:-2rem;
+        position: relative;
+    }
+    table{
+        box-sizing: border-box;
+        display: block;
+        height: 41.8rem;
+        width: 110.3rem;
+    }
+    thead{
+        box-sizing: border-box;
+        height: 4rem;
+        display: block;
+        position: fixed;
+        text-align: left;
+        position: relative;
+    }
+    th{
+        background: #4D5875;
+        height: 4rem;
+    }
+    tbody{
+        display: block;
+        height: 37.8rem;
+        position: relative;
+        overflow-y: scroll !important;
+    }
+    .listcarddetail{
+        background: transparent;
+        border-bottom: .1rem solid var(--white);
+        width: 110.3rem;
+        height: 5.4rem;
+        display: flex;
+        border-radius: 0;
+        color: var(--white);
+        align-items: center;
+        position: relative;
+    }
+    .listcarddetail .first {
+        gap:.8rem;
+    }
+    .listcarddetail:hover {
+        background: var(--hbg);
+    }
+    td{
+        height: 4.0rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .first svg{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    .first{
+        width: 37.4rem;
+        padding: 0 1.6rem;
+    }
+    .second{
+        width: 24.3rem;
+        padding: 0 1.6rem;
+    }
+    .third{
+        width: 24.3rem;
+        padding: 0 1.6rem;
+    }
+    .fourth{
+        width: 24.3rem;
+        padding: 0 1.6rem;
+    }
+    .drpbtn{
+        background: transparent;
+        border: none;
+        margin-left: 20rem;
+    }
+    .drpbtn svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        cursor: pointer;
+    }
+}
+@media(max-width:1360px){
+    .ListFormat{
+        width: 80vw;
+    }
+    table{
+        width: 78vw;
+    }
+    .listcarddetail{
+        width: 78vw;
+    }
+    .first{
+        width:23vw;
+    }
+    .second{
+        width:23vw;
+    }
+    .third{
+        width:23vw;
+    }
+    .drpbtn{
+        margin-left: 10vw;
+    }
+}
+@media (max-width:1024px) {
+    .ListFormat{
+        height:50rem;
+    }
+    thead{
+        height:3rem;
+        justify-content: center; 
+    }
+    .first svg{
+        display:none;
+    }
+    table{
+        margin-left: -1rem;
+    }
+    tbody{
+        margin-top:3rem;
+        height:90vw;
+    }
+    .deletepopup{
+        left:30vw;
+    }
+    .ListFormat{
+        width: 100vw;
+    }
+    table{
+        width: 95vw;
+    }
+    .listcarddetail{
+        width: 95vw;
+    }
+    .first{
+        width:25vw;
+    }
+    .second{
+        width:25vw;
+        justify-content: center;
+    }
+    .third{
+        width:23vw;
+        justify-content:end;
+    }
+    .fourth{
+        width:23vw;
+    }
+    .drpbtn{
+        margin-left: 11vw;
+    }
+}
+
+@media (max-width:750px) {
+    .deletepopup{
+        justify-content: center;
+        margin-left: -4.5rem;
+    }
+}
