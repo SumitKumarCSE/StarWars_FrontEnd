@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/starwars_frontend/static/css/main.12a23606.css",
-    "main.js": "/starwars_frontend/static/js/main.66a69a87.js",
+    "main.css": "/starwars_frontend/static/css/main.1931a203.css",
+    "main.js": "/starwars_frontend/static/js/main.19591b4a.js",
     "static/media/film3.jpg": "/starwars_frontend/static/media/film3.1f83839c329405033a2c.jpg",
     "static/media/starship9.jpg": "/starwars_frontend/static/media/starship9.61b1cc060beec33a9c20.jpg",
     "static/media/starship8.jpg": "/starwars_frontend/static/media/starship8.b550c57d4bce6bd04208.jpg",
@@ -57,11 +57,11 @@
     "static/media/people6.jpg": "/starwars_frontend/static/media/people6.e62bf0d9a963fca8ca07.jpg",
     "static/media/planet10.jpg": "/starwars_frontend/static/media/planet10.8cb8dde5a091e220eba5.jpg",
     "index.html": "/starwars_frontend/index.html",
-    "main.12a23606.css.map": "/starwars_frontend/static/css/main.12a23606.css.map",
-    "main.66a69a87.js.map": "/starwars_frontend/static/js/main.66a69a87.js.map"
+    "main.1931a203.css.map": "/starwars_frontend/static/css/main.1931a203.css.map",
+    "main.19591b4a.js.map": "/starwars_frontend/static/js/main.19591b4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.12a23606.css",
-    "static/js/main.66a69a87.js"
+    "static/css/main.1931a203.css",
+    "static/js/main.19591b4a.js"
   ]
 }
