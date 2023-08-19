@@ -2,6 +2,8 @@
 
 Welcome to the Star Wars Website! This is a full responsive and interactive project built using React.js, CSS, and the Swap API. It allows users to explore information about various elements of the Star Wars universe, including films, people, planets, species, starships, and vehicles. The website offers both grid and list layouts for viewing details of each element.
 
+**Live On**: [https://sumitkumarcse.github.io/starwars_frontend/] 
+
 ## Features
 **Responsive Design**: The website is designed to be fully responsive and works seamlessly on various window screen sizes, from desktops to mobile devices.
 
